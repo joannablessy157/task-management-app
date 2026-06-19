@@ -215,15 +215,15 @@ http://localhost:5000
 
 ### Login Page
 
-Add screenshot here
+![Login](screenshots/login.png)
 
 ### Dashboard
 
-Add screenshot here
+![Dashboard](screenshots/dashboard.png)
 
-### Task Management Interface
+### Task Management
 
-Add screenshot here
+![Tasks](screenshots/tasks.png)
 
 ---
 
