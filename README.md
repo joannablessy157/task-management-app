@@ -1,27 +1,28 @@
-# ✅ Task Management App
+# ✅ TaskFlow – Task Management Application
 
-A modern and responsive full-stack Task Management Application designed to help users organize, track, and manage their daily tasks efficiently. The application provides secure authentication, task tracking, and productivity-focused features through a clean and intuitive interface.
+A modern and responsive full-stack Task Management Application that helps users organize, track, and manage their daily tasks efficiently. The application provides secure authentication, task tracking, productivity monitoring, and a clean user-friendly interface.
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Repository
 
-🔗 Add deployment link here
+🔗 https://github.com/joannablessy157/task-management-app
 
 ---
 
 ## 📖 Overview
 
-Task Management App provides an organized workspace where users can:
+TaskFlow provides a centralized workspace where users can:
 
-* Create and manage daily tasks
+* Create and manage tasks
 * Track task completion status
-* Update task information
-* Delete unnecessary tasks
-* Securely access personal tasks through authentication
-* Improve productivity with a simple and user-friendly interface
+* Set task priorities
+* Organize daily activities
+* Manage pending and completed tasks
+* Securely access personal task data through authentication
+* Improve productivity with a clean and responsive interface
 
-Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
+Built using HTML, CSS, JavaScript, Node.js, Express.js, and MySQL.
 
 ---
 
@@ -31,25 +32,26 @@ Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
 
 * User Registration
 * Secure Login System
-* Password Encryption using bcrypt
+* Password Hashing using bcrypt
 * JWT Authentication
 * Protected Routes
 
 ### 📋 Task Management
 
 * Create New Tasks
-* View All Tasks
 * Edit Existing Tasks
 * Delete Tasks
 * Mark Tasks as Completed
-* Track Pending Tasks
+* View Pending Tasks
+* Task Priority Management
+* Due Date Tracking
 
-### 📊 Productivity Tracking
+### 📊 Productivity Dashboard
 
-* Monitor Task Progress
-* View Completed Tasks
+* Track Task Progress
+* Monitor Completed Tasks
+* View Pending Work
 * Organize Daily Activities
-* Improve Time Management
 
 ### 📱 Responsive Design
 
@@ -60,10 +62,10 @@ Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
 
 ### 🔒 Security
 
-* Password Hashing
+* Secure Password Storage
 * Token-Based Authentication
 * Protected API Endpoints
-* Secure User Sessions
+* User-Specific Task Access
 
 ---
 
@@ -82,12 +84,12 @@ Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
 
 ### Database
 
-* MongoDB
-* Mongoose
+* MySQL
+* mysql2
 
-### Authentication
+### Authentication & Security
 
-* JSON Web Token (JWT)
+* JWT (JSON Web Tokens)
 * bcryptjs
 
 ---
@@ -98,7 +100,6 @@ Built using Node.js, Express.js, MongoDB, HTML, CSS, and JavaScript.
 task-management-app/
 
 │
-
 ├── middleware/
 │   └── auth.js
 │
@@ -121,8 +122,8 @@ task-management-app/
 ├── server.js
 ├── package.json
 ├── package-lock.json
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
@@ -133,11 +134,12 @@ task-management-app/
 * REST API Development
 * Authentication & Authorization
 * CRUD Operations
-* MongoDB Integration
+* MySQL Database Integration
 * Backend Routing
 * Middleware Implementation
 * Responsive Web Design
-* Version Control using Git & GitHub
+* Local Storage Management
+* Git & GitHub Version Control
 
 ---
 
@@ -149,7 +151,7 @@ task-management-app/
 git clone https://github.com/joannablessy157/task-management-app.git
 ```
 
-### Navigate to the Project Folder
+### Navigate to Project Folder
 
 ```bash
 cd task-management-app
@@ -163,21 +165,18 @@ npm install
 
 ### Configure Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the root directory:
 
 ```env
-MONGO_URI=your_mongodb_connection_string
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=taskflow
 JWT_SECRET=your_secret_key
 PORT=5000
 ```
 
-### Start the Application
-
-```bash
-npm start
-```
-
-or
+### Run the Application
 
 ```bash
 node server.js
@@ -191,31 +190,11 @@ http://localhost:5000
 
 ---
 
-## 📡 API Endpoints
-
-### Authentication
-
-| Method | Endpoint           | Description   |
-| ------ | ------------------ | ------------- |
-| POST   | /api/auth/register | Register User |
-| POST   | /api/auth/login    | Login User    |
-
-### Tasks
-
-| Method | Endpoint       | Description   |
-| ------ | -------------- | ------------- |
-| GET    | /api/tasks     | Get All Tasks |
-| POST   | /api/tasks     | Create Task   |
-| PUT    | /api/tasks/:id | Update Task   |
-| DELETE | /api/tasks/:id | Delete Task   |
-
----
-
 ## 📸 Screenshots
 
 ### Login Page
 
-![Login](screenshots/login.png)
+![Login Page](screenshots/login.png)
 
 ### Dashboard
 
@@ -223,29 +202,32 @@ http://localhost:5000
 
 ### Task Management
 
-![Tasks](screenshots/tasks.png)
+![Task Management](screenshots/tasks.png)
 
 ---
 
 ## 🔮 Future Improvements
 
 * Task Categories
-* Due Dates & Reminders
-* Dark Mode Support
 * Search & Filtering
+* Dark Mode Support
 * Email Notifications
-* Drag & Drop Task Management
-* Real-Time Updates
+* Calendar Integration
+* Task Analytics Dashboard
+* Drag & Drop Task Organization
 * Cloud Deployment
 
 ---
 
 ## 👩‍💻 Author
 
-Developed by **Joanna Blessy E**
+**Joanna Blessy E**
 
 * B.Tech Computer Science and Engineering
-* SRM Institute of Science and Technology, Ramapuram
 * GitHub: https://github.com/joannablessy157
 
-If you found this project useful, consider giving it a ⭐ on GitHub.
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
